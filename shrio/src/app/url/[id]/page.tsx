@@ -270,7 +270,7 @@ export default function Url() {
               id="block"
               className="flex flex-col gap-2 w-full border border-stone-900 p-2 rounded-lg text-center"
             >
-              <p className="line-clamp-1">Today's Clicks</p>
+              <p className="line-clamp-1">{"Today's Clicks"}</p>
               <p className="text-lg font-semibold">
                 {urlData?.dailyClicks?.count}
               </p>

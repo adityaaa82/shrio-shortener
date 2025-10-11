@@ -89,7 +89,7 @@ export default function ForgotPassword() {
             id="signin"
             className="flex flex-row items-center justify-center p-2 gap-1"
           >
-            Don't have an account ?
+            {"Don't have an account ?"}
             <Link href="/auth/signup" className="text-sky-500 hover:underline">
               SignUp
             </Link>

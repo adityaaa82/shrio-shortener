@@ -12,7 +12,7 @@ export const signupUser = async (
   }
   try {
     const serverURL = process.env.NEXT_PUBLIC_SERVER_URL;
-    let userId = localStorage.getItem("sh-id") || crypto.randomUUID();
+    const userId = localStorage.getItem("sh-id") || crypto.randomUUID();
     const getIP = await fetch("https://api64.ipify.org?format=json").then(
       (res) => res.json()
     );

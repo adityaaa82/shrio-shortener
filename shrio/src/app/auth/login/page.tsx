@@ -14,7 +14,7 @@ export default function Login() {
   const [showPassword, setPassword] = useState<boolean>(false);
   const [showMsg, setMsg] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
-  let user = userStore((state) => state.setUser);
+  const user = userStore((state) => state.setUser);
   const [loginData, setLoginData] = useState<authUser>({
     email: "",
     password: "",
@@ -127,7 +127,7 @@ export default function Login() {
             id="signin"
             className="flex flex-row items-center justify-center p-2 gap-1"
           >
-            Don't have an account ?
+            {"Don't have an account ?"}
             <Link href="/auth/signup" className="text-sky-500 hover:underline">
               SignUp
             </Link>

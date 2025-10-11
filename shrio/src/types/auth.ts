@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 export interface authUser {
     email: string;
     password: string;
@@ -13,7 +15,5 @@ export interface user {
     email: string;
     id: string;
 }
-
-
 
 export type FunctionResponse = Success;
