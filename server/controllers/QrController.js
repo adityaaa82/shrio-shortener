@@ -306,7 +306,7 @@ export const redirectForQr = async (req, res) => {
     findQR.scans += 1;
 
     if (todayDate !== lastDate) {
-      findQR.dailyScans.count = 1;
+      findQR.dailyScans.count += 1;
       findQR.dailyScans.date = Date.now();
     } else {
       findQR.dailyScans.count += 1;
