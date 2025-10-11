@@ -1,10 +1,9 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-
 export interface authUser {
     email: string;
     password: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 interface Success {
     success: boolean;
     message: string;
